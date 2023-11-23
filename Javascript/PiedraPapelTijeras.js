@@ -52,5 +52,13 @@ const determineWinner = (userChoice, computerChoice) => {
     }
 }
 
+// Con operadores ternarios sería así.
+/*const determineWinner = (userChoice, computerChoice) =>
+userChoice === computerChoice ? "The game is a tie" : 
+userChoice === "rock" ? computerChoice === "paper" ? "Computer won!" : "The user won!" : 
+userChoice === "paper" ? computerChoice === "scissors" ? "Computer won!" : "The user won!" : 
+userChoice === "scissors" ? computerChoice === "rock" ? "Computer won!" : "The user won!" : 
+"Invalid choices"; */
+
 console.log(determineWinner("scissors", "paper"))
 
