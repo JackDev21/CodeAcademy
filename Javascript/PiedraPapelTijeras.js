@@ -5,6 +5,8 @@ const getUserChoice = (userInput) => {
     userInput = userInput.toLowerCase(); // Convierte la entrada del usuario a minúsculas
     if (userInput === "rock" || userInput === "paper" || userInput === "scissors") {
         return userInput; // Devuelve la elección del usuario si es válida
+    } else if (userInput === "bomb") {
+        return "bomb"
     } else {
         console.log("Choose rock, paper, or scissors"); // Imprime un mensaje si la entrada no es válida
         return null; // Devuelve null para indicar una elección inválida
@@ -50,8 +52,8 @@ userChoice === "scissors" ? computerChoice === "rock" ? "Computer won!" : "The u
 
 
 // Función principal para ejecutar el juego
-const playGame = () => {
-    const userChoice = getUserChoice("paper"); // Obtiene la elección del usuario
+const playGame = (userInput) => {
+    const userChoice = getUserChoice(userInput); // Obtiene la elección del usuario
     if (!userChoice) return; // Si la elección del usuario es inválida, sale de la función
 
     const computerChoice = getComputerChoice(); // Obtiene la elección de la computadora
@@ -60,6 +62,6 @@ const playGame = () => {
     console.log(determineWinner(userChoice, computerChoice)); // Determina y muestra al ganador
 };
 
-playGame(); // Ejecuta la función principal para iniciar el juego
+playGame("bomb"); // Ejecuta la función principal para iniciar el juego
 
 
