@@ -37,7 +37,20 @@ const determineWinner = (userChoice, computerChoice) => {
         } else {
             return "The user won!"
         }
+    } else if (userChoice === "paper") {
+        if (computerChoice === "scissors") {
+            return "Computer won!"
+        } else {
+            return "The user won!"
+        }
+    } else if (userChoice === "scissors") {
+        if (computerChoice === "rock") {
+            return "Computer won!"
+        } else {
+            return "The user won!"
+        }
     }
-
 }
+
+console.log(determineWinner("scissors", "paper"))
 
