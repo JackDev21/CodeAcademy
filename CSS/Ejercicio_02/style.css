@@ -1,0 +1,49 @@
+.header {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.about-me {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.title {
+    font-weight: bolder;
+    text-align: center;
+}
+
+h1 {
+    opacity: 0.5;
+}
+
+h2 {
+    text-align: center;
+    color: olivedrab;
+}
+
+ul {
+    text-align: center;
+    padding: 5px;
+    display: inline;
+    list-style-type: circle;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Georgia;
+    background-image: url(https://th.bing.com/th/id/R.d96f0fe1be5a5b763cf3c307ae9741e3?rik=4O%2f7u7rlggXWbw&riu=http%3a%2f%2fwww.v3wall.com%2fwallpaper%2f1920_1200%2f0912%2f1920_1200_20091225101518861955.jpg&ehk=kQ%2bs%2buJsSXiZT9xL%2bf4ADAYkyWeTmjNlsdoEBHgGkzU%3d&risl=&pid=ImgRaw&r=0);
+}
+
+.contact {
+    text-align: center;
+}
