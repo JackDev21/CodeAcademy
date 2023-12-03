@@ -1,0 +1,31 @@
+// Definición de la cadena de entrada y un array que contiene las vocales.
+const input = "turpentine and turtles";
+const vowels = ["a", "e", "i", "o", "u"];
+
+// array donde se almacenará el resultado.
+const resultArray = [];
+
+// Ciclo for que itera sobre cada caracter en la cadena de entrada.
+for (let i = 0; i < input.length; i++) {
+    // Si el caracter actual es "e", se agrega al resultado.
+    if (input[i] === "e") {
+        resultArray.push(input[i]);
+    }
+    // Si el caracter actual es "u", se agrega al resultado.
+    if (input[i] === "u") {
+        resultArray.push(input[i]);
+    }
+    // Ciclo for anidado que itera sobre cada vocal en el array de vocales.
+    for (let x = 0; x < vowels.length; x++) {
+        // Si el caracter actual es una vocal, se agrega al resultado.
+        if (input[i] === vowels[x]) {
+            resultArray.push(input[i]);
+        }
+    }
+}
+
+// Se une el array de resultado en una cadena y se convierte a mayúsculas.
+const resultString = resultArray.join("").toUpperCase();
+
+// Se muestra el resultado final en mayúsculas por consola.
+console.log(resultString);
