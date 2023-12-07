@@ -24,3 +24,4 @@ num.sort() // Ordena el array de menor a mayor alfabeticamente [1, 10, 2, 3, 4, 
 num.sort(function (a, b) { return a - b; }) // Ordena el array de menor a mayor numerico [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 num.sort(function (a, b) { return b + a; }) // Ordena el array de mayor a menor numerico [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 num.sort(function (a, b) { return 0.5 - Math.random() }) // Ordena el array de forma aleatoria [1, 10, 2, 3, 4, 5, 6, 7, 8, 9]
+num.length // Devuelve la longitud del array [10]
