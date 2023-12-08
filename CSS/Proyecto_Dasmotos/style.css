@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 /* Estilo para el elemento h1 */
 h1 {
     /* Establece una imagen de fondo para el elemento h1 */
@@ -62,10 +61,12 @@ h2 {
     font-weight: bold;
 }
 
+/* Estilo específico para el elemento con id "brush" */
 #brush {
     background-color: mediumspringgreen;
 }
 
+/* Estilo para los elementos h2 dentro de un elemento con clase "menu" */
 .menu h2 {
     font-size: 32px;
     color: white;
@@ -81,26 +82,29 @@ h3 {
     font-weight: bold;
 }
 
+/* Estilo específico para el elemento con id "frame" */
 #frame {
     background-color: lightcoral;
 }
 
+/* Estilo para todos los elementos <span> */
 span {
     color: blue;
     font-weight: bold;
 }
 
+/* Estilo específico para el elemento con id "paint" */
 #paint {
     background-color: skyblue;
 }
 
+/* Estilo para el elemento <footer> */
 footer {
-    display: block;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    margin: 1em;
+    margin: 1em auto;
     background-color: black;
     color: white;
-
+    width: 10em;
 }
