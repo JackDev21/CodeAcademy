@@ -1,0 +1,67 @@
+body {
+    background-color: #074363;
+}
+
+.navigation {
+    background-color: #074363;
+}
+
+.navigation .nav-link {
+    color: #F77F00;
+}
+
+.navigation .nav-link:hover {
+    color: #FCBF49;
+}
+
+.navigation .nav-link:active {
+    color: #EAE2B7;
+}
+
+a {
+    color: #F77F00;
+    text-decoration: solid;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #EAE2B7;
+}
+
+a:active {
+    color: #F77F00;
+}
+
+.btn {
+    font-size: 25px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.btn:hover {
+    color: #EAE2B7;
+}
+
+.btn:active {
+    color: #F77F00;
+    font-size: 28px;
+    transition: color 0.1s ease-in;
+}
+
+
+.activity {
+    border-radius: 10%;
+    color: #F77F00;
+}
+
+.activity:hover {
+    background-color: #EAE2B7;
+    color: #074363;
+    transition: color .1s ease-in, background-color .2s ease-in;
+}
+
+
+.activity:active {
+    font-size: 40px;
+    transition: font-size .1s;
+    color: red;
+}
