@@ -1,1 +1,1 @@
-![Alt text](webmorocco.png)
+![Alt text](web.png)
