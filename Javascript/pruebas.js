@@ -1,11 +1,15 @@
-const higherOrderFunc = param => {
-    param();
-    return `I just invoked ${param.name} as a callback function!`
+
+
+const spiderman = {
+    name: "Peter Parker",
+    age: 30,
+    actor: "Tobey Maguire",
+    movies: ["The Amazing Spiderman", "The Amazing Spiderman 2"]
 }
 
-const anotherFunc = () => {
-    return 'I\'m being invoked by the higher-order function!';
-}
 
-console.log(higherOrderFunc(anotherFunc));
+const { movies, actor } = spiderman;
+
+
+console.log(movies);
 
