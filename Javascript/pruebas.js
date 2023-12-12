@@ -1,17 +1,16 @@
-const robot = {
-    _model: '1E78V2',
-    _energyLevel: 100,
-    _numOfSensors: 15,
-    set numOfSensors(num) {
 
-    },
-    get numOfSensors() {
-        if (typeof this._numOfSensors === 'number') {
-            return this._numOfSensors;
-        } else {
-            return 'Sensors are currently down.'
-        }
-    },
+const modelo = "seat"
+const tipo = "ibiza"
 
+
+const coche = (modelo, tipo) => {
+    return {
+        modelo: modelo,
+        tipo: tipo,
+    };
 };
+
+const miCoche = coche(modelo, tipo);
+console.log(miCoche);
+
 
