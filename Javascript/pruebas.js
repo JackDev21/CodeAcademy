@@ -1,15 +1,17 @@
+const robot = {
+    _model: '1E78V2',
+    _energyLevel: 100,
+    _numOfSensors: 15,
+    set numOfSensors(num) {
 
+    },
+    get numOfSensors() {
+        if (typeof this._numOfSensors === 'number') {
+            return this._numOfSensors;
+        } else {
+            return 'Sensors are currently down.'
+        }
+    },
 
-const spiderman = {
-    name: "Peter Parker",
-    age: 30,
-    actor: "Tobey Maguire",
-    movies: ["The Amazing Spiderman", "The Amazing Spiderman 2"]
-}
-
-
-const { movies, actor } = spiderman;
-
-
-console.log(movies);
+};
 
