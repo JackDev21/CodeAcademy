@@ -1,1 +1,1 @@
-![Alt text](blueberries.png)
+![Alt text](img/blueberries.png)
