@@ -1,16 +1,11 @@
+const finalGrade = (argOne, argTwo, argThree) => {
+    switch (average) {
+        case (average < 0 || average > 100):
+            return 'You have entered an invalid grade.';
+            break;
 
-const modelo = "seat"
-const tipo = "ibiza"
 
-
-const coche = (modelo, tipo) => {
-    return {
-        modelo: modelo,
-        tipo: tipo,
-    };
-};
-
-const miCoche = coche(modelo, tipo);
-console.log(miCoche);
+    }
+}
 
 
