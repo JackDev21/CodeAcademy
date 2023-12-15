@@ -1,26 +1,9 @@
-// Write your function here:
 
-const howOld = (age, year) => {
-    // calcular año actual.
-    let fechaActual = new Date();
-    let anoActual = fechaActual.getFullYear();
+let n0 = 0
+let n1 = 1
 
-    // calcular diferencia año.
-    const anoDiferencia = year - anoActual
-    const edadCalculada = age + anoDiferencia
-
-    if (year > anoActual) {
-        return `You will be ${edadCalculada} in the year ${year}`
-    } else if (year < (anoActual - age)) {
-        return `The year ${year} was ${anoDiferencia} years before you were born`
-    } else {
-        return `You were ${edadCalculada} in the year ${anoActual}`
-    }
-
+for (let i = 0; i < 10; i++) {
+    console.log(n0)
+    n0 = n0 + n1
+    n1 = n0 - n1
 }
-
-
-console.log(howOld(15, 1987))
-
-// Once your function is written, write function calls to test your code!
-
