@@ -4,7 +4,7 @@ let currentRoundNumber = 1; // Inicializando el número de ronda actual
 
 // Función para generar un número objetivo aleatorio entre 0 y 9
 const generateTarget = () => {
-    let randomNumber = Math.floor(Math.random() * 9); // Genera un número aleatorio entre 0 y 8 (sin incluir 9)
+    let randomNumber = Math.floor(Math.random() * 10); // Genera un número aleatorio entre 0 y 9
     return randomNumber; // Devuelve el número aleatorio como el objetivo
 }
 
