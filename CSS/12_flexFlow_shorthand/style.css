@@ -33,8 +33,14 @@ h2 {
 
 #row {}
 
-#row-reverse {}
+#row-reverse {
+    flex-flow: row-reverse wrap;
 
-#column {}
+}
+
+#column {
+    flex-flow: column wrap;
+
+}
 
 #column-reverse {}
