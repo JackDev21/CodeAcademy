@@ -3,3 +3,69 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+    margin: 10px;
+    color: white;
+
+}
+
+.logo {
+    max-height: 50px;
+    margin-left: 10px;
+}
+
+.container-navbar {
+    width: 100%;
+    border: 1px salmon solid;
+    height: 69px;
+    margin: auto auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+li {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.container-first {
+    width: 100%;
+    border: 1px salmon solid;
+    height: 400px;
+    margin-bottom: 10px;
+
+}
+
+.container-second {
+    width: 100%;
+    border: 1px salmon solid;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.container-third {
+    width: 100%;
+    border: 1px salmon solid;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    border: 1px salmon solid;
+    height: 69px;
+    margin: auto auto 10px auto;
+    color: white;
+}
