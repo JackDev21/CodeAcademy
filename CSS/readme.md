@@ -13,3 +13,17 @@
 - `flex-direction` se usa para especificar los ejes principal y secundario.
 - `flex-flow` se utiliza para especificar `flex-wrap` y `flex-direction` en una sola declaración.
 - Los contenedores flex se pueden anidar mediante `display: flex` o `display: inline-flex` para los hijos de otros contenedores flex.
+
+# **GRID ESSENTIALS**
+
+Hasta este punto, hemos cubierto una gran variedad de formas diferentes de manipular la cuadrícula y los elementos dentro de ella para crear diseños interesantes.
+
+- `grid-template-columns` define el número y tamaños de las columnas de la cuadrícula.
+- `grid-template-rows` define el número y tamaños de las filas de la cuadrícula.
+- `grid-template` es una forma abreviada de definir tanto `grid-template-columns` como `grid-template-rows` en una línea.
+- `row-gap` coloca espacios en blanco entre las filas de la cuadrícula.
+- `column-gap` coloca espacios en blanco entre las columnas de la cuadrícula.
+- `gap` es una forma abreviada de definir tanto `row-gap` como `column-gap` en una línea.
+- `grid-row-start` y `grid-row-end` hacen que los elementos abarquen ciertas filas de la cuadrícula.
+- `grid-column-start` y `grid-column-end` hacen que los elementos abarquen ciertas columnas de la cuadrícula.
+- `grid-area` es una forma abreviada de `grid-row-start`, `grid-column-start`, `grid-row-end` y `grid-column-end`, ¡todo en una línea!
