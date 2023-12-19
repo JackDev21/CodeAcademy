@@ -1,1 +1,1 @@
-![Alt text](img/hotels.png)
+[Title](index.html)
