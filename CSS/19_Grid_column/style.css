@@ -3,19 +3,20 @@
     border: 2px blue solid;
     height: 500px;
     width: 500px;
-    grid-template: repeat(4, 1fr 4fr) / repeat(4, 1fr 1fr);
+    grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
     gap: 5px;
 }
 
 .a {
-    /*grid-row: 5 / 7;
-    grid-column-start: 1;
+    grid-row: 5 / 7;
+    /*grid-column-start: 1;
     grid-column-end: 3;*/
+    grid-column: 1 / span 2;
 }
 
 .b {
-    /*grid-row: 2 / span 3;*/
-
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 6;
 }
 
 .box {
