@@ -1,0 +1,16 @@
+.grid {
+    border: 2px blue solid;
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50px 100% 50px;
+    /*Forma corta(shorthand) primero rows despues columns => grid-template: 50px 60% 50px / 50px 100% 50px  */
+    grid-template-rows: 50px 60% 30px;
+}
+
+.box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+}
