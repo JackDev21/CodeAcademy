@@ -16,8 +16,6 @@
 
 # **GRID ESSENTIALS**
 
-Hasta este punto, hemos cubierto una gran variedad de formas diferentes de manipular la cuadrícula y los elementos dentro de ella para crear diseños interesantes.
-
 - `grid-template-columns` define el número y tamaños de las columnas de la cuadrícula.
 - `grid-template-rows` define el número y tamaños de las filas de la cuadrícula.
 - `grid-template` es una forma abreviada de definir tanto `grid-template-columns` como `grid-template-rows` en una línea.
@@ -27,3 +25,16 @@ Hasta este punto, hemos cubierto una gran variedad de formas diferentes de manip
 - `grid-row-start` y `grid-row-end` hacen que los elementos abarquen ciertas filas de la cuadrícula.
 - `grid-column-start` y `grid-column-end` hacen que los elementos abarquen ciertas columnas de la cuadrícula.
 - `grid-area` es una forma abreviada de `grid-row-start`, `grid-column-start`, `grid-row-end` y `grid-column-end`, ¡todo en una línea!
+
+# Revisión: Medidas Relativas en Desarrollo Web
+
+- El contenido en un sitio web puede ser dimensionado relativamente respecto a otros elementos en la página usando medidas relativas.
+- La unidad `em` ajusta el tamaño de la fuente en relación con el tamaño de la fuente de un elemento padre.
+- La unidad `rem` ajusta el tamaño de la fuente en relación con el tamaño de la fuente de un elemento raíz, que en este caso es el elemento `<html>`.
+- Los porcentajes son útiles para dimensionar características del modelo de caja, como el ancho, alto, padding o margen de un elemento.
+- Al emplear porcentajes para el ancho y alto, los elementos hijos se dimensionan en relación con las dimensiones de su padre (asegúrate de establecer las dimensiones del padre primero).
+- Los porcentajes también pueden usarse para establecer padding y margen, ajustándolos horizontal y verticalmente respecto al ancho del elemento padre.
+- Puedes definir el ancho mínimo y máximo de los elementos utilizando `min-width` y `max-width`.
+- Asimismo, la altura mínima y máxima de los elementos se puede establecer con `min-height` y `max-height`.
+- Al fijar la altura de una imagen o vídeo, su ancho puede ajustarse a `auto` para mantener la proporción al escalar. Modificar estas dos propiedades y valores logrará el mismo efecto.
+- Una imagen de fondo en un elemento HTML se ajustará proporcionalmente cuando se configure su propiedad `background-size` en `cover`.
