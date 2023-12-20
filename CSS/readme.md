@@ -38,3 +38,14 @@
 - Asimismo, la altura mínima y máxima de los elementos se puede establecer con `min-height` y `max-height`.
 - Al fijar la altura de una imagen o vídeo, su ancho puede ajustarse a `auto` para mantener la proporción al escalar. Modificar estas dos propiedades y valores logrará el mismo efecto.
 - Una imagen de fondo en un elemento HTML se ajustará proporcionalmente cuando se configure su propiedad `background-size` en `cover`.
+
+# Revisión: Media Queries en Desarrollo Web
+
+- Cuando un sitio web se adapta al tamaño de la pantalla en la que se visualiza, se le denomina un sitio web responsivo.
+- Puedes escribir media queries para ayudar con diferentes tamaños de pantalla.
+- Agregar la etiqueta `<meta>` de viewport a nuestro código nos permite controlar el ancho y escalado del viewport para que se dimensione y escale correctamente en todos los dispositivos.
+- Las media queries requieren características de medios. Estas características son las condiciones que deben cumplirse para aplicar el CSS dentro de una media query.
+- Las características de medios pueden detectar muchos aspectos del navegador del usuario, incluyendo el ancho, alto, resolución, orientación de la pantalla, y más.
+- El operador `and` requiere que múltiples características de medios sean verdaderas al mismo tiempo.
+- Una lista separada por comas de características de medios solo requiere que una característica de medios sea verdadera para que se aplique el código.
+- La mejor práctica para identificar dónde deben establecerse las media queries es redimensionando el navegador para determinar dónde el contenido se rompe naturalmente. Los puntos de quiebre naturales se encuentran al cambiar el tamaño del navegador.
