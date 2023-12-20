@@ -39,7 +39,7 @@
 - Al fijar la altura de una imagen o vídeo, su ancho puede ajustarse a `auto` para mantener la proporción al escalar. Modificar estas dos propiedades y valores logrará el mismo efecto.
 - Una imagen de fondo en un elemento HTML se ajustará proporcionalmente cuando se configure su propiedad `background-size` en `cover`.
 
-# Revisión: Media Queries en Desarrollo Web
+# Media Queries en Desarrollo Web
 
 - Cuando un sitio web se adapta al tamaño de la pantalla en la que se visualiza, se le denomina un sitio web responsivo.
 - Puedes escribir media queries para ayudar con diferentes tamaños de pantalla.
