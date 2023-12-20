@@ -26,7 +26,7 @@
 - `grid-column-start` y `grid-column-end` hacen que los elementos abarquen ciertas columnas de la cuadrícula.
 - `grid-area` es una forma abreviada de `grid-row-start`, `grid-column-start`, `grid-row-end` y `grid-column-end`, ¡todo en una línea!
 
-# Revisión: Medidas Relativas en Desarrollo Web
+# Medidas Relativas en Desarrollo Web
 
 - El contenido en un sitio web puede ser dimensionado relativamente respecto a otros elementos en la página usando medidas relativas.
 - La unidad `em` ajusta el tamaño de la fuente en relación con el tamaño de la fuente de un elemento padre.
