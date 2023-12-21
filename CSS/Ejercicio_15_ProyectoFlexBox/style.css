@@ -16,6 +16,7 @@
 body {
     font-family: "Birthstone", sans-serif;
     margin: 1rem;
+    background-image: url(./img/fondo.jpg);
 }
 
 
@@ -23,15 +24,20 @@ body {
 /*Header*/
 
 .header {
+    background-color: rgba(59, 32, 0, 0.863);
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 15px;
+    color: white;
 }
 
 .header h1 {
     font-size: 3rem;
+    position: relative;
+    left: 10rem;
 }
 
 .header img {
@@ -49,13 +55,14 @@ nav ul {
     gap: 2.5rem;
     padding-right: 2rem;
     font-size: 2rem;
+    display: flex;
 }
 
 
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
@@ -66,20 +73,67 @@ main {
     height: auto;
     background-color: rgba(127, 255, 212, 0);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+
 }
 
 .img-dog {
-    border: 1px solid black;
-    width: 100%;
-    height: 300px;
+    margin: 10px;
+    width: 310px;
+    height: 310px;
+    background-image: url(./img/img3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-color: rgba(39, 21, 0, 0);
+
+
+}
+
+
+.img-dog h1,
+h2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     margin: 1rem;
+    font-size: 2.9rem;
+    color: rgb(255, 255, 255);
 }
 
 .text-dog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     border: 1px solid black;
     width: 100%;
-    height: 300px;
+    height: auto;
     margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgba(65, 34, 0, 0.849);
+    border-radius: 15px;
+}
+
+.text-dog h1 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.text-dog p {
+    font-size: 1.8rem;
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Main Section*/
@@ -88,21 +142,59 @@ section {
     width: 100%;
     height: auto;
     display: flex;
+    gap: 10px;
+    margin: 1rem 0 1rem 0;
+
 
 }
 
 .first-img {
     border: 1px solid black;
     width: 100%;
-    height: 300px;
-    margin: 1rem;
+    height: auto;
+    background-color: rgba(109, 58, 0, 0.7);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
 }
+
+
+.first-img .luna-one img {
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+
+}
+
+.first-img .luna-two img {
+    width: 350px;
+    height: auto;
+    border-radius: 25px;
+
+}
+
+
 
 .second-img {
     border: 1px solid black;
     width: 100%;
-    height: 300px;
-    margin: 1rem;
+    height: auto;
+    background-color: rgba(109, 58, 0, 0.7);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+
+
 }
 
 
@@ -115,4 +207,12 @@ footer {
     border: 1px solid black;
     width: 100%;
     height: 5rem;
+    color: white;
+    background-color: rgba(82, 44, 0, 0.945);
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1rem;
 }
