@@ -1,9 +1,19 @@
+const gifts = ['tren', 'oso', 'pelota']
+const materials = 'tronesa'
 
-let n0 = 0
-let n1 = 1
 
-for (let i = 0; i < 10; i++) {
-    console.log(n0)
-    n0 = n0 + n1
-    n1 = n0 - n1
+
+function manufacture(gifts, materials) {
+    for (let i = 0; i < gifts.length; i++) {
+        console.log(gifts[i])
+    }
+    for (let j = 0; j < materials.length; j++) {
+        console.log(materials[j])
+    }
+
+
+
+    return []
 }
+
+console.log(manufacture(gifts, materials))
