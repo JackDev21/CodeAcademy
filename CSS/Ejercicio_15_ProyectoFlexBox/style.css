@@ -48,6 +48,16 @@ body {
     border-radius: 1rem;
 }
 
+img {
+    /* Estilos iniciales de la imagen */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    /* Estilos del hover */
+    transform: scale(1.2);
+}
+
 
 /*navbar*/
 
@@ -78,8 +88,17 @@ nav a {
 }
 
 
+.nav ul li a {
+    border-radius: 5px;
+    /* Ajusta el valor según tu preferencia */
+    /* Otros estilos de los enlaces */
+}
 
-
+.nav ul li a:hover {
+    /* Estilos del hover */
+    background-color: #f0f0f0;
+    color: #333;
+}
 
 /*Main*/
 
@@ -97,6 +116,7 @@ main {
 }
 
 .img-dog {
+    /* Estilos iniciales de la imagen */
     margin: 10px;
     width: 310px;
     height: 310px;
@@ -106,10 +126,13 @@ main {
     border-radius: 50%;
     background-position: center;
     background-color: rgba(39, 21, 0, 0);
-
-
+    transition: box-shadow 0.3s ease;
 }
 
+.img-dog:hover {
+    /* Estilos del hover */
+    box-shadow: 0 0 10px rgba(39, 21, 0, 0.5);
+}
 
 .img-dog h1,
 h2 {
@@ -170,7 +193,7 @@ section {
 
 .first-img {
     border: 1px solid white;
-    width: auto;
+    width: 70%;
     height: auto;
     background-color: rgba(109, 58, 0, 0.7);
     border-radius: 15px;
@@ -221,7 +244,7 @@ section {
 }
 
 .second-img img {
-    max-width: 55%;
+    max-width: 25%;
     width: auto;
     height: auto;
     border-radius: 25px;
@@ -296,7 +319,12 @@ footer {
         /* Añade espacio alrededor de los íconos */
     }
 
-
+    .nav-mobile ul li a:hover ion-icon,
+    .nav-mobile ul li a:hover svg {
+        /* Agrega estilos para el hover aquí */
+        color: #f0f0f0;
+        /* Otros estilos de los iconos en hover */
+    }
 
 
 }
