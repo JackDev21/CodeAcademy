@@ -193,7 +193,7 @@ section {
 
 .first-img {
     border: 1px solid white;
-    width: 70%;
+    width: 50%;
     height: auto;
     background-color: rgba(109, 58, 0, 0.7);
     border-radius: 15px;
@@ -225,7 +225,7 @@ section {
 
 .second-img {
     border: 1px solid white;
-    width: 100%;
+    width: 70%;
     height: auto;
     background-color: rgba(109, 58, 0, 0.7);
     border-radius: 15px;
@@ -236,7 +236,7 @@ section {
     gap: 1rem;
     padding: 1rem;
     border-radius: 15px;
-
+    flex-wrap: wrap;
 }
 
 .nombre-rosita {
@@ -248,8 +248,23 @@ section {
     width: auto;
     height: auto;
     border-radius: 25px;
-
 }
+
+
+.box1 {
+    border: 1px solid white;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(245, 222, 179, 0.267);
+}
+
+.box2 {
+    border: 1px solid white;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(245, 222, 179, 0.267);
+}
+
 
 
 
