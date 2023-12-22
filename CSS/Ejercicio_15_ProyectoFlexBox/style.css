@@ -29,15 +29,17 @@ body {
     height: 8rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 15px;
     color: white;
+
 }
 
 .header h1 {
     font-size: 3rem;
     position: relative;
     left: 10rem;
+    padding: 0 5rem;
 }
 
 .header img {
@@ -49,22 +51,35 @@ body {
 
 /*navbar*/
 
+
+/* screen < 1080 */
+
+
 nav ul {
     list-style: none;
-    display: flex;
     gap: 2.5rem;
     padding-right: 2rem;
     font-size: 2rem;
     display: flex;
 }
 
-
-
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
+
+
+@media screen and (min-width: 1200px) {
+    header .nav-mobile {
+        display: none;
+    }
+
+}
+
+
+
+
 
 /*Main*/
 
@@ -110,7 +125,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid white;
     width: 100%;
     height: auto;
     margin: 1rem;
@@ -142,20 +157,24 @@ section {
     width: 100%;
     height: auto;
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
     margin: 1rem 0 1rem 0;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
 
 
 }
 
 .first-img {
-    border: 1px solid black;
-    width: 100%;
+    border: 1px solid white;
+    width: auto;
     height: auto;
     background-color: rgba(109, 58, 0, 0.7);
     border-radius: 15px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
@@ -173,7 +192,7 @@ section {
 }
 
 .first-img .luna-two img {
-    width: 350px;
+    width: 300px;
     height: auto;
     border-radius: 25px;
 
@@ -182,29 +201,39 @@ section {
 
 
 .second-img {
-    border: 1px solid black;
+    border: 1px solid white;
     width: 100%;
     height: auto;
     background-color: rgba(109, 58, 0, 0.7);
     border-radius: 15px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    align-content: center;
+    flex-direction: row-reverse;
     gap: 1rem;
-
+    padding: 1rem;
+    border-radius: 15px;
 
 }
 
+.nombre-rosita {
+    color: pink;
+}
 
+.second-img img {
+    max-width: 55%;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+
+}
 
 
 
 /*Footer*/
 
 footer {
-    border: 1px solid black;
+    border: 1px solid white;
     width: 100%;
     height: 5rem;
     color: white;
@@ -215,4 +244,59 @@ footer {
     align-items: center;
     border-radius: 15px;
     padding: 1rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .nav {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 15px
+    }
+
+    .header h1 {
+        display: none;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .first-img {
+        flex-direction: column;
+    }
+
+    .nav-mobile ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-mobile ul li svg {
+        width: 50px;
+        /* Establece el ancho del icono SVG */
+        height: 50px;
+        /* Establece la altura del icono SVG */
+    }
+
+    .nav-mobile ul li ion-icon,
+    .nav-mobile ul li svg {
+        /* Establece un fondo con un gradiente */
+        background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+        /* Ajusta otros estilos según sea necesario */
+        color: rgb(0, 0, 0);
+        /* Cambia el color del icono a blanco */
+        border-radius: 50%;
+        /* Agrega un borde circular a los íconos */
+        padding: 10px;
+        /* Añade espacio alrededor de los íconos */
+    }
+
+
+
+
 }
