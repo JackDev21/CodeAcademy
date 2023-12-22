@@ -17,6 +17,9 @@ body {
     font-family: "Birthstone", sans-serif;
     margin: 1rem;
     background-image: url(./img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
