@@ -129,7 +129,8 @@ main {
     border-radius: 50%;
     background-position: center;
     background-color: rgba(39, 21, 0, 0);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
+    border: 4px solid pink;
 }
 
 .img-dog:hover {
@@ -151,7 +152,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0);
     width: 100%;
     height: auto;
     margin: 1rem;
@@ -195,7 +196,7 @@ section {
 }
 
 .first-img {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0);
     width: 100%;
     height: auto;
     background-color: rgba(109, 58, 0, 0.7);
@@ -250,7 +251,7 @@ section {
 
 
 .second-img {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0);
     width: 100%;
     height: 100%;
     background-color: rgba(109, 58, 0, 0.7);
@@ -294,17 +295,17 @@ section {
 
 
 .box1 {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0);
     width: 100%;
     height: auto;
-    background-color: rgba(245, 222, 179, 0.267);
+    background-color: rgba(245, 222, 179, 0);
 }
 
 .box2 {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0);
     width: 100%;
     height: auto;
-    background-color: rgba(245, 222, 179, 0.267);
+    background-color: rgba(245, 222, 179, 0);
 }
 
 
