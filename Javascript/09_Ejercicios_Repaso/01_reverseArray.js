@@ -15,8 +15,6 @@ const reverseArray2 = (array2) => {
 }
 
 
-
-
 // When you're ready to test your code, uncomment the below and run:
 const sentence = ['sense.', 'make', 'all', 'will', 'This'];
 
