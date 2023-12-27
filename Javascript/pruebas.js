@@ -1,19 +1,26 @@
-const gifts = ['tren', 'oso', 'pelota']
-const materials = 'tronesa'
-
-
-
-function manufacture(gifts, materials) {
-    for (let i = 0; i < gifts.length; i++) {
-        console.log(gifts[i])
+function uniqueLength(nums) {
+    if (nums.length === 0) {
+        return 0;
     }
-    for (let j = 0; j < materials.length; j++) {
-        console.log(materials[j])
+    let i = 0;
+    let j = 1;
+    while (j < nums.length) {
+        if (nums[j] !== nums[i]) {
+            i++;
+            nums[i] = nums[j];
+            j++;
+        } else {
+            j++;
+        }
     }
-
-
-
-    return []
+    return i + 1;
 }
 
-console.log(manufacture(gifts, materials))
+
+// Should return 5
+const result = uniqueLength([1, 1, 2, 3, 4, 5, 5]);
+console.log(result);
+
+// Should return 1
+const result2 = uniqueLength([1, 1, 1, 1]);
+console.log(result2);
