@@ -14,3 +14,9 @@ const astrologia = [
     "Tu creatividad te llevará a grandes logros esta semana.",
     "Estarás rodeado de energías positivas en el trabajo."
 ];
+
+
+
+const generadorDeMensajes = () => {
+
+}
