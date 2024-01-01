@@ -19,4 +19,7 @@ const astrologia = [
 
 const generadorDeMensajes = () => {
 
+    const indiceMensajesInspiradores = Math.floor(Math.random() * mensajesInspiradores.length); // Genera un número aleatorio entre 0 y 2 para elegir un mensaje inspirador
+    const indiceChistes = Math.floor(Math.random() * chistes.length); // Genera un número aleatorio entre 0 y 2 para elegir un chiste
+    const indiceAstrologia = Math.floor(Math.random()) * astrologia.length; // Genera un número aleatorio entre 0 y 2 para elegir una astrología
 }
