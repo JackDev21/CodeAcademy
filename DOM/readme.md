@@ -50,4 +50,4 @@ El Modelo de Objetos del Documento, abreviado DOM, es una poderosa estructura si
 
 Por ejemplo, si quieres acceder al elemento `<body>` desde tu script, puedes hacerlo como una propiedad del objeto document usando `document.body`. Esta propiedad devolverá el elemento body de ese DOM.
 
-De manera similar, podrías acceder al elemento `<title>` con la propiedad `.title`. Aquí tienes una lista completa de todas las propiedades del objeto document.
+De manera similar, podrías acceder al elemento `<title>` con la propiedad `.title`. Aquí tienes una lista completa de todas las propiedades del objeto document: [Document Object Model (DOM)](https://developer.mozilla.org/es/docs/Web/API/Document).
