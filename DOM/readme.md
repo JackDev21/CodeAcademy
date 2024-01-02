@@ -39,3 +39,15 @@ Repasemos:
 - El sistema de organización en el DOM imita la estructura de anidación de un documento HTML.
 - Los elementos anidados dentro de otro se denominan hijos de ese elemento. El elemento en el que están anidados se llama elemento padre de esos elementos.
 - El DOM también permite acceder a los atributos de un elemento HTML, como style, id, etc.
+
+## JavaScript y el DOM
+
+### La Palabra Clave Document
+
+El Modelo de Objetos del Documento, abreviado DOM, es una poderosa estructura similar a un árbol que organiza los elementos en una página web y permite a los lenguajes de programación acceder a ellos. Esta lección se centrará en algunos de los métodos y propiedades más útiles de la interfaz del DOM en JavaScript. Esta interfaz está implementada por todos los navegadores modernos.
+
+¡Primero lo primero! El objeto document en JavaScript es la puerta de entrada a la estructura del DOM. El objeto document te permite acceder al nodo raíz del árbol DOM. Antes de poder acceder a un elemento específico en la página, primero debes acceder a la estructura del documento en sí. El objeto document permite a los scripts acceder a los hijos del DOM como propiedades.
+
+Por ejemplo, si quieres acceder al elemento `<body>` desde tu script, puedes hacerlo como una propiedad del objeto document usando `document.body`. Esta propiedad devolverá el elemento body de ese DOM.
+
+De manera similar, podrías acceder al elemento `<title>` con la propiedad `.title`. Aquí tienes una lista completa de todas las propiedades del objeto document.
