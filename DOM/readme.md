@@ -28,3 +28,14 @@ Definimos un nodo como un punto de intersección en un árbol que contiene datos
 En el árbol DOM, el nodo más alto se llama nodo raíz y representa el documento HTML. Los descendientes del nodo raíz son las etiquetas HTML en el documento, comenzando con la etiqueta `<html>`, seguida de las etiquetas `<head>` y `<body>` y así sucesivamente.
 
 ![DOM](./DOM.svg)
+
+## Revisión
+
+Modelo de Objetos del Documento, o DOM, como una estructura!
+
+Repasemos:
+
+- El DOM es un modelo estructural de una página web que permite que los lenguajes de programación accedan a esa página.
+- El sistema de organización en el DOM imita la estructura de anidación de un documento HTML.
+- Los elementos anidados dentro de otro se denominan hijos de ese elemento. El elemento en el que están anidados se llama elemento padre de esos elementos.
+- El DOM también permite acceder a los atributos de un elemento HTML, como style, id, etc.
