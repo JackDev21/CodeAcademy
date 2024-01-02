@@ -11,3 +11,5 @@ Prerrequisitos:
 JavaScript
 Git y GitHub
 Línea de comandos
+
+for run proyect ---> node mensaje.js at terminal
