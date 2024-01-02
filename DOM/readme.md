@@ -27,4 +27,4 @@ Definimos un nodo como un punto de intersección en un árbol que contiene datos
 
 En el árbol DOM, el nodo más alto se llama nodo raíz y representa el documento HTML. Los descendientes del nodo raíz son las etiquetas HTML en el documento, comenzando con la etiqueta `<html>`, seguida de las etiquetas `<head>` y `<body>` y así sucesivamente.
 
-![DOM](./DOM.png)
+![DOM](./DOM.svg)
