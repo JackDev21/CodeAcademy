@@ -1,5 +1,3 @@
-s
-
 # Git y GitHub
 
 - ¿Qué es Git?
