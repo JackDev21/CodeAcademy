@@ -51,3 +51,16 @@ El Modelo de Objetos del Documento, abreviado DOM, es una poderosa estructura si
 Por ejemplo, si quieres acceder al elemento `<body>` desde tu script, puedes hacerlo como una propiedad del objeto document usando `document.body`. Esta propiedad devolverá el elemento body de ese DOM.
 
 De manera similar, podrías acceder al elemento `<title>` con la propiedad `.title`. Aquí tienes una lista completa de todas las propiedades del objeto document: [Document Object Model (DOM)](https://developer.mozilla.org/es/docs/Web/API/Document).
+
+## JavaScript y el DOM
+
+- La palabra clave `document` otorga acceso a la raíz del DOM en JavaScript.
+- La interfaz del DOM te permite seleccionar un elemento específico con selectores CSS utilizando el método `.querySelector()`.
+- Puedes acceder directamente a un elemento por su ID con el método `.getElementById()`, que devuelve un solo elemento.
+- Puedes acceder a una serie de elementos con los métodos `.getElementsByClassName()` y `.getElementsByTagName()`, y luego llamar a un solo elemento haciendo referencia a su posición en la serie.
+- Las propiedades `.innerHTML` y `.style` te permiten modificar un elemento cambiando su contenido o estilo, respectivamente.
+- Puedes crear, agregar y eliminar elementos usando los métodos `.createElement()`, `.appendChild()` y `.removeChild()` respectivamente.
+- La propiedad `.onclick` puede agregar interactividad a un elemento del DOM basada en un evento de clic.
+- La propiedad `.children` devuelve una lista de los hijos de un elemento y la propiedad `.parentNode` devuelve el nodo conectado más cercano en dirección a la raíz del elemento.
+
+¡Esto resume las principales funcionalidades y métodos para manipular la estructura y el contenido de una página web utilizando JavaScript y el DOM!
