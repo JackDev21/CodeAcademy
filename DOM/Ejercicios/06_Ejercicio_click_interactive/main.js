@@ -13,3 +13,6 @@ function turnButtonRed() {
 
 // Asigna la función 'turnButtonRed' como manejador del evento 'onclick' para el botón
 element.onclick = turnButtonRed;
+
+
+alert("Hello, World!");
