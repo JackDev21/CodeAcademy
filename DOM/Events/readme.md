@@ -11,3 +11,13 @@ Los eventos en la web son interacciones del usuario y manipulaciones del navegad
 - Un usuario deslizando hacia la derecha en una imagen.
 
 Cuando un usuario realiza cualquiera de las acciones anteriores, está causando que el evento se active o se desencadene. Por ejemplo, "se activó un evento de clic cuando se hizo clic en el botón". Ser capaz de responder a estos eventos hace que tu sitio web sea interactivo y, por lo tanto, dinámico.
+
+## EVENTOS DEL DOM CON JAVASCRIPT
+
+- Puedes registrar eventos en elementos del DOM utilizando el método `addEventListener()`.
+- `addEventListener()` toma dos argumentos: el tipo de evento y una función manejadora de eventos.
+- Cuando se desencadena un evento en el objetivo del evento, se ejecuta la función manejadora de eventos registrada.
+- Las funciones manejadoras de eventos también pueden registrarse como valores de las propiedades `onevent` de su objetivo de evento.
+- Propiedades del objeto de evento como `.target`, `.type` y `.timeStamp` se utilizan para proporcionar información sobre el evento.
+- `addEventListener()` se puede usar para agregar múltiples funciones manejadoras de eventos a un solo evento.
+- `removeEventListener()` detiene manejadores de eventos específicos de "escuchar" eventos específicos que se están disparando.
