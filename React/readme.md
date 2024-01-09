@@ -23,8 +23,7 @@ Antes de comenzar, es esencial comprender que React depende de dos cosas para re
 Con eso en mente, observemos la primera línea:
 
 ```javascript
-Copy code
-const container = document.getElementById('app')
+const container = document.getElementById("app");
 ```
 
 - Esta línea:
@@ -36,8 +35,7 @@ const container = document.getElementById('app')
   En la siguiente línea:
 
 ```javascript
-Copy code
-const root = createRoot(container)
+const root = createRoot(container);
 ```
 
 - utilizamos `createRoot()` de la librería react-dom/client, la cual crea una raíz de React a partir de container y la almacena en root. root puede usarse para renderizar una expresión de JSX. Esta es la parte de "dónde colocar el contenido" del renderizado de React.
@@ -45,8 +43,7 @@ const root = createRoot(container)
 Finalmente, la última línea:
 
 ```javascript
-Copy code
-root.render(<h1>Hola mundo</h1>)
+root.render(<h1>Hola mundo</h1>);
 ```
 
-- utiliza el método render() de root para renderizar el contenido pasado como argumento. Aquí pasamos un elemento <h1>, que muestra Hola mundo. Esta es la parte de "qué contenido renderizar" del renderizado de React.
+- utiliza el método render() de root para renderizar el contenido pasado como argumento. Aquí pasamos un elemento `<h1>`, que muestra Hola mundo. Esta es la parte de "qué contenido renderizar" del renderizado de React.
