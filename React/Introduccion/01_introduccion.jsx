@@ -49,3 +49,5 @@ import { createRoot } from "react-dom/client"; // Importar método createRoot de
 const container = document.getElementById("app"); // Obtener el contenedor con ID "app"
 const root = createRoot(container); // Crear una raíz de React
 root.render(<h1>Hello world</h1>); // Renderizar un elemento <h1> dentro del contenedor "app"
+
+// Renderizado con React

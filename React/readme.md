@@ -47,3 +47,16 @@ root.render(<h1>Hola mundo</h1>);
 ```
 
 - utiliza el método render() de root para renderizar el contenido pasado como argumento. Aquí pasamos un elemento `<h1>`, que muestra Hola mundo. Esta es la parte de "qué contenido renderizar" del renderizado de React.
+
+### INTRODUCCIÓN A JSX
+
+- React es un marco de trabajo (framework) modular, escalable, flexible y popular para el front-end.
+- JSX es una extensión de sintaxis para JavaScript que nos permite tratar HTML como expresiones.
+- Pueden ser almacenados en variables, objetos, arrays ¡y más!
+- Los elementos JSX pueden tener atributos y ser anidados entre sí, al igual que en HTML.
+- JSX debe tener exactamente un elemento externo, y otros elementos pueden estar anidados dentro.
+- createRoot() de react-dom/client se puede utilizar para crear una raíz de React en el elemento DOM especificado.
+- El método render() de una raíz de React puede ser utilizado para renderizar JSX en la pantalla.
+- El método render() de una raíz de React solo actualiza los elementos del DOM que han cambiado utilizando el DOM virtual.
+
+A medida que continúas aprendiendo más sobre React, descubrirás cosas poderosas que puedes hacer con JSX, algunos problemas comunes de JSX y cómo evitarlos.
