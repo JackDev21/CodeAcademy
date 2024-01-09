@@ -1,0 +1,7 @@
+# Validación del Lado del Cliente: HTML
+
+La primera técnica que podemos utilizar para validar los datos de un formulario es prevenir que se envíen entradas problemáticas en primer lugar. Esto se llama validación del lado del cliente. El cliente es el proceso que interactúa con el servidor en nombre de un usuario; en el caso de los sitios web, el navegador web es el cliente. La lógica para validar el formulario está incluida en el código que muestra el formulario en el dispositivo del usuario. No se requiere interacción con el backend para realizar validaciones del lado del cliente.
+
+Dado que la validación de formularios es tan común, HTML moderno proporciona algunas de estas funciones de validación integradas. Por ejemplo, podemos usar HTML para hacer que algunas partes de un formulario sean obligatorias y otras opcionales. También podemos utilizar HTML para establecer valores mínimos y máximos para una entrada o longitudes mínimas o máximas para un campo de texto. Incluso podemos exigir que la entrada coincida con un patrón particular, especificado por una expresión regular.
+
+Si no se siguen ninguna de las reglas establecidas en la validación del formulario HTML, el usuario no podrá enviar su formulario y recibirá un mensaje de error que explica por qué. Con estas verificaciones en su lugar, es menos probable que se envíen datos incorrectos al backend. La validación del formulario HTML también beneficiará al usuario: el cliente proporciona al usuario una retroalimentación inmediata, sin tener que esperar una comunicación lenta con el backend.
