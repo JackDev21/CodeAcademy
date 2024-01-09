@@ -31,3 +31,15 @@ El gato meowó
 En el primer ejemplo, teníamos las letras del alfabeto presentadas en orden pero interrumpidas por un número 2 fuera de lugar. En el segundo, omitimos el quinto dígito de un código postal famoso. En el tercero, omitimos la "a" de la palabra gato. En el último ejemplo, escribimos HTML con una etiqueta de apertura <h1> pero una etiqueta de cierre </h2> no coincidente. Si notaste estos errores, es porque tu cerebro ha sido entrenado para esperar patrones en ciertos tipos de datos.
 
 A diferencia de los humanos, que pueden recibir este entrenamiento de manera pasiva con el tiempo, las computadoras deben programarse precisamente para reconocer patrones. Para especificar patrones para que la computadora los reconozca, usamos un lenguaje especial llamado expresiones regulares, también conocidas como regex o regexp. Una expresión regular es una secuencia de caracteres que representa un patrón. Podemos usar ese patrón para encontrar coincidencias en una cadena de texto, confirmar que los datos tienen un formato aceptable, o incluso reemplazar partes de las cadenas de texto con diferentes caracteres.
+
+# Introducción a la Validación de Formularios
+
+## Revisión
+
+- Los sitios web modernos requieren mucha información de sus usuarios y recolectan gran parte de esta información a través de formularios HTML.
+- Es esencial validar los datos enviados a través de formularios para mantener seguros los sitios web y garantizar su correcto funcionamiento.
+- Las expresiones regulares son secuencias de caracteres que definen patrones a buscar en el texto. Son una herramienta importante utilizada en la validación de la entrada de datos.
+- El HTML moderno cuenta con útiles métodos integrados para la validación de formularios.
+- La validación personalizada y compleja del lado del cliente se puede realizar con JavaScript.
+- Las solicitudes asíncronas al servidor pueden realizar validaciones en el back-end antes de que se envíe un formulario.
+- Se requiere una validación final en el back-end de todos los datos para asegurar la seguridad de una aplicación y sanitizar todos los datos.
