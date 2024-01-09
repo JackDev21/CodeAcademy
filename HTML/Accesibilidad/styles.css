@@ -19,7 +19,7 @@ body {
 
 .overlay:before {
     content: " ";
-    z-index: -1;
+    z-index: 1;
     display: block;
     position: absolute;
     height: 450px;
@@ -35,13 +35,13 @@ body {
 }
 
 h1 {
-    color: black;
+    color: white;
     font-family: 'Lobster', sans-serif;
     font-size: 80px;
     margin: 0px;
     padding-top: 12%;
     text-align: center;
-    z-index: 0;
+    z-index: 2;
 }
 
 h2 {
@@ -115,7 +115,8 @@ ul {
 li {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 20px;
+    list-style-type: circle;
 }
 
 .info {
@@ -140,7 +141,7 @@ li {
 }
 
 .ingredients {
-    background-color: orange;
+    background-color: midnightblue;
     padding: 30px;
     width: 50%;
 }
@@ -149,6 +150,7 @@ li {
     color: #011C27;
     font-size: 18px !important;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .ingredients li {
@@ -159,7 +161,7 @@ li {
 }
 
 .nutrition {
-    background-color: cyan;
+    background-color: lightgray;
     padding: 30px;
     width: 50%;
 }
