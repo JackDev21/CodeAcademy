@@ -1,9 +1,12 @@
-var isSquare = function (n) {
-    if (n < 0) {
-        return false
-    } else if ((n * n === (Math.pow(n * 2)))) {
-        return true
-    }
+class Surgeon {
+    constructor(name, department) {
+        this._name = name;
+        this._department = department;
+        this._remainingVacationDays = 20;
 
+    }
 }
+
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
 
