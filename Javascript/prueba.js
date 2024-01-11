@@ -1,6 +1,9 @@
-const x = [1, 2, 3, 4, 5];
-const [y, z, a, b] = x;
-console.log(y); // 1
-console.log(z); // 2
-console.log(b)
-console.log(a)
+var isSquare = function (n) {
+    if (n < 0) {
+        return false
+    } else if ((n * n === (Math.pow(n * 2)))) {
+        return true
+    }
+
+}
+
