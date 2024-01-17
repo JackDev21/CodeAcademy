@@ -60,3 +60,21 @@ root.render(<h1>Hola mundo</h1>);
 - El método render() de una raíz de React solo actualiza los elementos del DOM que han cambiado utilizando el DOM virtual.
 
 A medida que continúas aprendiendo más sobre React, descubrirás cosas poderosas que puedes hacer con JSX, algunos problemas comunes de JSX y cómo evitarlos.
+
+# Componentes y JSX Avanzado
+
+1. **Componentes de Función y JSX:**
+
+   - Los componentes de función pueden devolver múltiples líneas JSX al anidar los elementos en un elemento principal.
+   - Se pueden usar atributos variables dentro de un componente de React mediante inyecciones de JavaScript.
+
+2. **Lógica en Componentes:**
+
+   - Los componentes de React admiten lógica al colocar las declaraciones lógicas antes de las declaraciones de retorno.
+
+3. **Condiciones en Componentes:**
+
+   - Los componentes pueden devolver condicionalmente elementos JSX al poner declaraciones condicionales dentro de los componentes.
+
+4. **Manejo de Eventos:**
+   - Los componentes pueden responder a eventos al definir manipuladores de eventos y pasarlos a los elementos JSX.
