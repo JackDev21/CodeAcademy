@@ -87,7 +87,7 @@ A medida que continúas aprendiendo más sobre React, descubrirás cosas poderos
 6. **Componentes de Clase y JSX:**
    - Los componentes de clase pueden devolver elementos JSX de una manera mucho más sencilla.
 
-### Creando una Aplicación React
+# Creando una Aplicación React
 
 Utiliza create-react-app para crear fácilmente una aplicación React en tu propia computadora.
 
