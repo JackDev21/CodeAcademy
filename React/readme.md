@@ -267,3 +267,20 @@ Esto abrirá automáticamente una pestaña en tu navegador apuntando a `http://l
 Si deseas aprender más sobre `create-react-app`, consulta la documentación en [el sitio web oficial de create-react-app](https://create-react-app.dev/).
 
 Para configurar tu entorno de desarrollo y facilitar la depuración, considera revisar nuestro artículo sobre [React Developer Tools](https://codecademy.com/articles/react-developer-tools).
+
+## Recursos Adicionales
+
+Si estás interesado en profundizar en estos temas, aquí tienes algunos recursos adicionales:
+
+- **Documentación:** [React Documentation: Getting Started](https://reactjs.org/docs/getting-started.html)
+- **Tutorial:** [Intro to React](https://reactjs.org/tutorial/tutorial.html)
+
+- **Artículo:** [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+
+- **Artículo:** [What the Fork is the React Virtual DOM](https://reactjs.org/docs/faq-internals.html#what-is-the-virtual-dom)
+
+- **Recurso:** [Awesome React](https://github.com/enaqx/awesome-react)
+
+- **Recurso:** [Create React App](https://create-react-app.dev/)
+
+Estos recursos te proporcionarán una comprensión más profunda de React y te ayudarán a desarrollar tus habilidades en esta biblioteca.
