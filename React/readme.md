@@ -77,4 +77,174 @@ A medida que continúas aprendiendo más sobre React, descubrirás cosas poderos
    - Los componentes pueden devolver condicionalmente elementos JSX al poner declaraciones condicionales dentro de los componentes.
 
 4. **Manejo de Eventos:**
+
    - Los componentes pueden responder a eventos al definir manipuladores de eventos y pasarlos a los elementos JSX.
+
+5. **Componentes de Clase:**
+
+   - Los componentes de clase son los que se utilizan para crear elementos JSX de una manera mucho más sencilla.
+
+6. **Componentes de Clase y JSX:**
+   - Los componentes de clase pueden devolver elementos JSX de una manera mucho más sencilla.
+
+### Creando una Aplicación React
+
+Utiliza create-react-app para crear fácilmente una aplicación React en tu propia computadora.
+
+### Introducción
+
+React es un framework de interfaz de usuario desarrollado por Facebook. Tiene una tasa de adopción de desarrolladores que crece rápidamente y fue clasificado como el framework web más querido en la encuesta de desarrolladores de Stack Overflow en 2019. Este artículo te guiará a través de la configuración de tu primera aplicación React y asume que estás familiarizado con editores de texto y navegación por línea de comandos.
+
+Nota: Recomendamos usar create-react-app para centrarte en aprender React. Podrás aplicar lo que aprendas aquí a frameworks de React como Next.js.
+
+Preparándote
+Utilizaremos el administrador de paquetes Node (npm), así que necesitarás tener Node instalado en tu computadora. Para verificar si tienes Node instalado, ejecuta este comando en tu terminal:
+
+bash
+Copy code
+node -v
+Si tienes Node instalado, este comando devolverá un número de versión, como v12.18.1.
+
+Si aún no está instalado, sigue los pasos en Configuración de Node Localmente antes de continuar.
+
+Cuando instalas Node, automáticamente obtienes npm instalado en tu computadora también. Sin embargo, npm es un proyecto separado de Node.js y tiende a actualizarse con más frecuencia. Como resultado, incluso si acabas de instalar Node (y por lo tanto npm), es buena idea actualizar npm. ¡Afortunadamente, npm sabe cómo actualizarse a sí mismo!
+
+Para actualizar a la última versión de npm en \*nix (OSX, Linux, etc.), puedes ejecutar este comando en tu terminal:
+
+bash
+Copy code
+sudo npm install -g npm@latest
+Para actualizar en Windows, sigue los pasos que se encuentran en la documentación de npm.
+
+1. Configuración de la Aplicación de Referencia
+   Es posible crear manualmente una aplicación React, pero Facebook ha creado un paquete de Node llamado create-react-app para generar una versión de referencia de una aplicación React.
+
+Además de proporcionar algo que funcione de inmediato, tiene el beneficio adicional de proporcionar una estructura consistente para las aplicaciones React que reconocerás a medida que te muevas entre proyectos React. También proporciona un script de construcción y un servidor de desarrollo listos para usar.
+
+Utilizaremos npx, una herramienta de ejecución de paquetes que viene con npm 5.2+ y versiones superiores, para instalar y ejecutar create-react-app. Esto asegurará que se utilice la última versión de create-react-app.
+
+Abre tu terminal.
+
+Si previamente instalaste create-react-app globalmente a través de npm install -g create-react-app, se recomienda que desinstales el paquete primero. En tu terminal, ejecuta estos comandos:
+
+bash
+Copy code
+npm uninstall -g create-react-app
+npx create-react-app myfirstreactapp
+Si nunca has instalado create-react-app antes, simplemente ejecuta este comando:
+
+bash
+Copy code
+npx create-react-app myfirstreactapp
+Si tienes Yarn instalado, create-react-app lo utilizará por defecto para crear nuevos proyectos. Si prefieres usar npm, puedes agregar --use-npm al comando de creación. Se verá así:
+
+bash
+Copy code
+npx create-react-app myfirstreactapp --use-npm
+(Siéntete libre de reemplazar myfirstreactapp con el nombre que desees, siempre y cuando no contenga letras mayúsculas :-))
+
+Al completar, recibirás algunos consejos rápidos sobre cómo usar la aplicación:
+
+[Comandos de createReactApp](insertar enlace a la imagen)
+
+Antes de ejecutar la aplicación, echemos un vistazo a la estructura de la aplicación y veamos qué contiene.
+
+![react comands](https://content.codecademy.com/programs/react/creating-a-react-app/npm_react_commands.png)
+
+2. Estructura de la Aplicación React
+   Cambia a la carpeta de la aplicación que acabas de crear y ábrela en el editor de texto de tu elección. Deberías ver la siguiente estructura de archivos:
+
+plaintext
+Copy code
+myfirstreactapp
+├── node_modules
+├── public
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── logo192.png
+│ ├── logo512.png
+│ ├── manifest.json
+│ └── robots.txt
+├── src
+│ ├── App.css
+│ ├── App.js
+│ ├── App.test.js
+│ ├── index.css
+│ ├── index.js
+│ ├── logo.svg
+│ ├── serviceWorker.js
+│ └── setupTests.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+create-react-app se ha encargado de configurar la estructura principal de la aplicación, así como algunas configuraciones de desarrollo. La mayor parte de lo que ves no será visible para el visitante de tu aplicación web. React utiliza una herramienta llamada webpack que transforma los directorios y archivos aquí en activos estáticos. A los visitantes de tu sitio se les sirven esos activos estáticos.
+
+No te preocupes si no entiendes demasiado sobre webpack por ahora. Uno de los beneficios de usar create-react-app para configurar nuestra aplicación React es que podemos evitar cualquier tipo de configuración manual para webpack. Si estás interesado en profundizar por tu cuenta, puedes encontrar una descripción general de alto nivel de los conceptos principales de webpack aquí.
+
+.gitignore
+Este es el archivo estándar utilizado por la herramienta de control de origen git para determinar qué archivos y directorios ignorar al confirmar el código. Aunque este archivo existe, create-react-app no creó un repositorio git dentro de esta carpeta. Si observas el archivo, se ha encargado de ignorar varios elementos (incluso .DS_Store para usuarios de Mac):
+
+[createReactAppGitIgnore](insertar enlace a la imagen)
+
+## package.json
+
+Este archivo describe todas las configuraciones para la aplicación React.
+name es el nombre de tu aplicación.
+version es la versión actual.
+"private": true es una configuración de seguridad para evitar publicar accidentalmente tu aplicación como un paquete público dentro del ecosistema de npm.
+dependencies contiene todos los módulos y versiones de Node requeridos para la aplicación. En la imagen anterior, verás seis dependencias. Las primeras tres, como habrás imaginado, son para fines de prueba. Las dos siguientes permiten el uso de react y react-dom en nuestro JavaScript. Finalmente, react-scripts proporciona un conjunto útil de scripts de desarrollo para trabajar con React. En la captura de pantalla anterior, la versión de react especificada es ^16.13.1. Esto significa que npm instalará la versión principal más reciente que coincida con 16.x.x. En cambio, también puedes ver algo como ~1.2.3 en package.json, que solo instalará la versión menor más reciente que coincida con 1.2.x.
+scripts especifica alias que puedes usar para acceder a algunos de los comandos de react-scripts de manera más eficiente. Por ejemplo, ejecutar npm test en tu línea de comandos ejecutará react-scripts test --env=jsdom en segundo plano.
+También verás dos atributos más, eslintConfig y browserslist. Ambos son módulos de Node que tienen su propio conjunto de valores. browserslist proporciona información sobre la compatibilidad del navegador de la aplicación, mientras que eslintConfig se encarga del linting del código.
+node_modules
+Este directorio contiene dependencias y subdependencias de los paquetes utilizados por la aplicación React actual, según lo especificado por package.json. Si observas, es posible que te sorprenda la cantidad.
+
+Ejecutar ls -1 | wc -l dentro del directorio node_modules/ dará como resultado más de 800 subcarpetas. ¡Este directorio se agrega automáticamente a .gitignore por una buena razón! No te preocupes, incluso con todas estas dependencias, la aplicación básica solo tendrá alrededor de 50 KB después de ser minificada y comprimida para producción.
+
+## package-lock.json
+
+Este archivo contiene el árbol exacto de dependencias instalado en node_modules/. Esto proporciona una forma para que los equipos que trabajan en aplicaciones privadas se aseguren de tener la misma versión de dependencias y subdependencias. También contiene un historial de cambios en package.json, por lo que puedes ver rápidamente los cambios en las dependencias.
+
+## public
+
+Este directorio contiene activos que se servirán directamente sin procesamiento adicional por parte de webpack. index.html proporciona el punto de entrada para la aplicación web. También verás un favicon (icono de encabezado) y un manifest.json.
+
+El archivo de manifiesto configura cómo se comportará tu aplicación web si se agrega a la pantalla de inicio de un usuario de Android (los usuarios de Android pueden "acortar" aplicaciones web y cargarlas directamente desde la interfaz de usuario de Android). Puedes leer más sobre esto aquí.
+
+### Explorando la Estructura de tu Aplicación React
+
+Dentro de la carpeta `src`, encontrarás diversos archivos esenciales para tu aplicación. Algunos de los archivos y carpetas clave son:
+
+- **App.js:** Este archivo contiene el componente principal de tu aplicación. Es aquí donde definirás la estructura y el comportamiento de tus componentes React.
+
+- **App.css:** Aquí puedes definir estilos específicos para tu componente principal. Cada componente puede tener su propio archivo de estilos.
+
+- **index.js:** Este archivo es la entrada principal de tu aplicación React. Aquí es donde se renderiza tu componente principal en el contenedor especificado en tu archivo `public/index.html`.
+
+- **index.css:** Similar a `App.css`, este archivo proporciona estilos específicos para tu archivo `index.js`.
+
+- **registerServiceWorker.js:** Este archivo configura un service worker para tu aplicación, permitiendo funcionalidades como el almacenamiento en caché y actualizaciones para mejorar la experiencia del usuario.
+
+### Iniciando el Servidor de Desarrollo
+
+Recuerda que puedes iniciar el servidor de desarrollo ejecutando el siguiente comando en tu terminal dentro de la carpeta de tu aplicación:
+
+```bash
+npm start
+```
+
+Esto abrirá automáticamente una pestaña en tu navegador apuntando a `http://localhost:3000/`, donde podrás ver tu aplicación en tiempo real. Cualquier cambio que realices en el código se reflejará automáticamente en el navegador.
+
+### Personalizando tu Aplicación
+
+1. **Explora y Modifica:** Abre los archivos en la carpeta `src` y experimenta con el código. Modifica el contenido de `App.js` para personalizar el texto y la estructura de tu aplicación.
+
+2. **Añadiendo Componentes:** Conforme tu aplicación crezca, puedes organizarla mejor dividiendo la lógica y la interfaz en componentes más pequeños. Considera crear una carpeta `components` para almacenar estos componentes y otra carpeta `views` para organizar las vistas principales de tu aplicación.
+
+3. **Estilos y Diseño:** Añade estilos a tu aplicación para mejorar la apariencia. Puedes utilizar CSS puro o explorar bibliotecas como Styled Components o Sass para un enfoque más avanzado.
+
+### Siguientes Pasos
+
+Si deseas aprender más sobre `create-react-app`, consulta la documentación en [el sitio web oficial de create-react-app](https://create-react-app.dev/).
+
+Para configurar tu entorno de desarrollo y facilitar la depuración, considera revisar nuestro artículo sobre [React Developer Tools](https://codecademy.com/articles/react-developer-tools).
