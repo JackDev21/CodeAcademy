@@ -254,6 +254,8 @@ Esto abrirá automáticamente una pestaña en tu navegador apuntando a `http://l
 
 ### Personalizando tu Aplicación
 
+![setup](https://content.codecademy.com/courses/React/react_setup-039-app-js.png)
+
 1. **Explora y Modifica:** Abre los archivos en la carpeta `src` y experimenta con el código. Modifica el contenido de `App.js` para personalizar el texto y la estructura de tu aplicación.
 
 2. **Añadiendo Componentes:** Conforme tu aplicación crezca, puedes organizarla mejor dividiendo la lógica y la interfaz en componentes más pequeños. Considera crear una carpeta `components` para almacenar estos componentes y otra carpeta `views` para organizar las vistas principales de tu aplicación.
