@@ -186,7 +186,7 @@ No te preocupes si no entiendes demasiado sobre webpack por ahora. Uno de los be
 .gitignore
 Este es el archivo estándar utilizado por la herramienta de control de origen git para determinar qué archivos y directorios ignorar al confirmar el código. Aunque este archivo existe, create-react-app no creó un repositorio git dentro de esta carpeta. Si observas el archivo, se ha encargado de ignorar varios elementos (incluso .DS_Store para usuarios de Mac):
 
-[createReactAppGitIgnore](insertar enlace a la imagen)
+![createReactAppGitIgnore](https://content.codecademy.com/courses/React/react_setup-037-package-json.png)
 
 ## Descripción del Archivo `package.json`
 
@@ -242,7 +242,7 @@ Dentro de la carpeta `src`, encontrarás diversos archivos esenciales para tu ap
 
 ### Iniciando el Servidor de Desarrollo
 
-[!Pagina principal](https://content.codecademy.com/courses/React/react_setup-038-default-react-app.png)
+![Pagina principal](https://content.codecademy.com/courses/React/react_setup-038-default-react-app.png)
 
 Recuerda que puedes iniciar el servidor de desarrollo ejecutando el siguiente comando en tu terminal dentro de la carpeta de tu aplicación:
 
