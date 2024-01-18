@@ -154,8 +154,7 @@ Antes de ejecutar la aplicación, echemos un vistazo a la estructura de la aplic
 2. Estructura de la Aplicación React
    Cambia a la carpeta de la aplicación que acabas de crear y ábrela en el editor de texto de tu elección. Deberías ver la siguiente estructura de archivos:
 
-plaintext
-Copy code
+```
 myfirstreactapp
 ├── node_modules
 ├── public
@@ -178,6 +177,8 @@ myfirstreactapp
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
+
 create-react-app se ha encargado de configurar la estructura principal de la aplicación, así como algunas configuraciones de desarrollo. La mayor parte de lo que ves no será visible para el visitante de tu aplicación web. React utiliza una herramienta llamada webpack que transforma los directorios y archivos aquí en activos estáticos. A los visitantes de tu sitio se les sirven esos activos estáticos.
 
 No te preocupes si no entiendes demasiado sobre webpack por ahora. Uno de los beneficios de usar create-react-app para configurar nuestra aplicación React es que podemos evitar cualquier tipo de configuración manual para webpack. Si estás interesado en profundizar por tu cuenta, puedes encontrar una descripción general de alto nivel de los conceptos principales de webpack aquí.
