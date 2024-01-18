@@ -188,19 +188,33 @@ Este es el archivo estándar utilizado por la herramienta de control de origen g
 
 [createReactAppGitIgnore](insertar enlace a la imagen)
 
-## package.json
+## Descripción del Archivo `package.json`
 
-Este archivo describe todas las configuraciones para la aplicación React.
-name es el nombre de tu aplicación.
-version es la versión actual.
-"private": true es una configuración de seguridad para evitar publicar accidentalmente tu aplicación como un paquete público dentro del ecosistema de npm.
-dependencies contiene todos los módulos y versiones de Node requeridos para la aplicación. En la imagen anterior, verás seis dependencias. Las primeras tres, como habrás imaginado, son para fines de prueba. Las dos siguientes permiten el uso de react y react-dom en nuestro JavaScript. Finalmente, react-scripts proporciona un conjunto útil de scripts de desarrollo para trabajar con React. En la captura de pantalla anterior, la versión de react especificada es ^16.13.1. Esto significa que npm instalará la versión principal más reciente que coincida con 16.x.x. En cambio, también puedes ver algo como ~1.2.3 en package.json, que solo instalará la versión menor más reciente que coincida con 1.2.x.
-scripts especifica alias que puedes usar para acceder a algunos de los comandos de react-scripts de manera más eficiente. Por ejemplo, ejecutar npm test en tu línea de comandos ejecutará react-scripts test --env=jsdom en segundo plano.
-También verás dos atributos más, eslintConfig y browserslist. Ambos son módulos de Node que tienen su propio conjunto de valores. browserslist proporciona información sobre la compatibilidad del navegador de la aplicación, mientras que eslintConfig se encarga del linting del código.
-node_modules
-Este directorio contiene dependencias y subdependencias de los paquetes utilizados por la aplicación React actual, según lo especificado por package.json. Si observas, es posible que te sorprenda la cantidad.
+El archivo `package.json` es crucial para la configuración de tu aplicación React. Aquí te proporcionamos una breve descripción de las secciones más relevantes de este archivo:
 
-Ejecutar ls -1 | wc -l dentro del directorio node_modules/ dará como resultado más de 800 subcarpetas. ¡Este directorio se agrega automáticamente a .gitignore por una buena razón! No te preocupes, incluso con todas estas dependencias, la aplicación básica solo tendrá alrededor de 50 KB después de ser minificada y comprimida para producción.
+### Información General
+
+- **name:** El nombre de tu aplicación.
+
+- **version:** La versión actual de tu aplicación.
+
+- **"private": true:** Un ajuste de seguridad para evitar la publicación accidental de tu aplicación como un paquete público dentro del ecosistema de npm.
+
+### Dependencias
+
+La sección de dependencias contiene la información sobre los módulos de Node necesarios para tu aplicación. En la imagen de arriba, hay seis dependencias. Las primeras tres son para propósitos de prueba, mientras que las siguientes dos permiten el uso de `react` y `react-dom` en tu JavaScript. Finalmente, `react-scripts` proporciona scripts de desarrollo útiles para trabajar con React. La versión de `react` especificada es ^16.13.1, lo que significa que npm instalará la versión más reciente que coincida con 16.x.x. También podrías ver algo como ~1.2.3, que instalará la versión más reciente que coincida con 1.2.x.
+
+### Scripts
+
+La sección de scripts define alias que puedes usar para acceder a algunos comandos de `react-scripts` de manera más eficiente. Por ejemplo, ejecutar `npm test` en tu línea de comandos ejecutará `react-scripts test --env=jsdom` en segundo plano.
+
+### Otras Configuraciones
+
+- **eslintConfig:** Configuración específica para eslint, que se encarga del linting del código.
+
+- **browserslist:** Proporciona información sobre la compatibilidad del navegador de la aplicación.
+
+Este archivo es esencial para la configuración y gestión de tu aplicación React, asegurando una experiencia de desarrollo suave y consistente. ¡Explora y ajusta según las necesidades de tu proyecto!
 
 ## package-lock.json
 
@@ -227,6 +241,8 @@ Dentro de la carpeta `src`, encontrarás diversos archivos esenciales para tu ap
 - **registerServiceWorker.js:** Este archivo configura un service worker para tu aplicación, permitiendo funcionalidades como el almacenamiento en caché y actualizaciones para mejorar la experiencia del usuario.
 
 ### Iniciando el Servidor de Desarrollo
+
+[!Pagina principal](https://content.codecademy.com/courses/React/react_setup-038-default-react-app.png)
 
 Recuerda que puedes iniciar el servidor de desarrollo ejecutando el siguiente comando en tu terminal dentro de la carpeta de tu aplicación:
 
