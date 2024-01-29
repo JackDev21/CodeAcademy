@@ -3,7 +3,8 @@
 
 ## Introducción
 
-JavaScript es un lenguaje de programación de un solo hilo de ejecución, lo que significa que realiza una tarea a la vez. Sin embargo, para manejar operaciones que pueden llevar tiempo, como las solicitudes HTTP, JavaScript utiliza la asincronía.
+JavaScript es un lenguaje de programación de un solo hilo de ejecución, lo que significa que realiza una tarea a la vez.
+Sin embargo, para manejar operaciones que pueden llevar tiempo, como las solicitudes HTTP, JavaScript utiliza la asincronía.
 
 ## Asincronía en JavaScript
 
