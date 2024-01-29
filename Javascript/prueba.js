@@ -1,13 +1,16 @@
-function nbYear(p0, percent, aug, p) {
-    // your code
-    let years = 0
-    while (p0 < p) {
-        p0 + (p0 * (percent / 100)) + aug
-        years++
-    }
-    return years
+const assert = require('assert').assert;
+const Rooster = require('../index); 
 
-}
+describe('Rooster', () => {
+    describe('announceDawn', () => {
+        it('returns a rooster call', () => {
 
-
-console.log(nbYear(1500, 5, 100, 5000))
+            //setup
+            const expected = 'cock-a-doodle-doo!'
+            //Exercise
+            const actual = Rooster.announceDawn();
+            //verify
+            assert.equal(actual, expected)
+        });
+    });
+});
