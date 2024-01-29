@@ -1,6 +1,4 @@
 ```markdown
-## Aprendiendo TDD con Mocha: Revisión
-
 ### Proceso General
 
 El desarrollo guiado por pruebas (TDD) con Mocha sigue un proceso de tres pasos:
