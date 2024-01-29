@@ -1,16 +1,12 @@
-const assert = require('assert').assert;
-const Rooster = require('../index); 
+console.log("I'm learning about");
 
-describe('Rooster', () => {
-    describe('announceDawn', () => {
-        it('returns a rooster call', () => {
+for (let idx = 0; idx < 999999999; idx++) { }
 
-            //setup
-            const expected = 'cock-a-doodle-doo!'
-            //Exercise
-            const actual = Rooster.announceDawn();
-            //verify
-            assert.equal(actual, expected)
-        });
-    });
-});
+// The second console.log() statement is
+// delayed by the for loop's execution
+console.log("the Event Loop");
+
+
+console.log("I’m learning about");
+setTimeout(() => { console.log("Event Loop"); }, 2000);
+console.log("the");
