@@ -5,8 +5,10 @@ let unnecessaryWord = 'literally'; // Palabra que se considera innecesaria.
 let misspelledWord = 'beautifull'; // Palabra mal escrita.
 let badWord = 'freaking'; // Palabra considerada inapropiada.
 
+console.log(storyWords)
+
 let count = 0; // Variable para almacenar la cantidad de palabras.
-storyWords.forEach((word) => { // Recorre cada palabra en storyWords para contarlas.
+storyWords.forEach(() => { // Recorre cada palabra en storyWords para contarlas.
     count = count + 1; // Incrementa el contador de palabras.
 });
 console.log(count); // Imprime la cantidad de palabras en el párrafo.
@@ -15,12 +17,19 @@ storyWords = storyWords.filter((word) => { // Filtra las palabras innecesarias.
     return word !== unnecessaryWord;
 });
 
+console.log(storyWords)
+
+
+
 storyWords = storyWords.map((word) => { // Reemplaza la palabra mal escrita con la versión correcta.
     if (word === misspelledWord) {
         return "beautiful";
     }
     return word;
 });
+
+
+
 
 let badWordIndex = storyWords.findIndex((word) => { // Encuentra la posición de la palabra considerada inapropiada.
     return badWord === word;
@@ -35,7 +44,10 @@ let lengthCheck = storyWords.every((word) => { // Verifica si todas las palabras
 console.log(lengthCheck); // Imprime si todas las palabras cumplen con la condición de longitud.
 
 storyWords = storyWords.forEach((word) => { // Imprime las palabras que tienen más de 10 caracteres.
-    word.length > 10 && console.log(word);
+    if (word.length >= 10) {
+        console.log(word);
+    }
 });
 
-console.log(storyWords.join(" ")); // Imprime el párrafo después de realizar todas las modificaciones.
+
+
