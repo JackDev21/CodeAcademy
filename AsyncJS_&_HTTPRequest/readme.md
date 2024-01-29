@@ -8,7 +8,8 @@ Sin embargo, para manejar operaciones que pueden llevar tiempo, como las solicit
 
 ## Asincronía en JavaScript
 
-La asincronía en JavaScript permite que ciertas operaciones se realicen en segundo plano sin bloquear la ejecución del código principal. Se logra mediante callbacks, promesas y, más recientemente, async/await.
+La asincronía en JavaScript permite que ciertas operaciones se realicen en segundo plano sin bloquear la ejecución del
+código principal. Se logra mediante callbacks, promesas y, más recientemente, async/await.
 
 ### Ejemplo con Promesas
 
