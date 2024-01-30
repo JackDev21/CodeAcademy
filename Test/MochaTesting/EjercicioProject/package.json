@@ -1,0 +1,14 @@
+{
+	"name": "ejercicioproject",
+	"version": "1.0.0",
+	"description": "Testeo del ejercicio",
+	"main": "./index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"author": "Jose Canto",
+	"devDependencies": {
+		"mocha": "^9.0.3",
+		"assert": "^2.0.0"
+	}
+}

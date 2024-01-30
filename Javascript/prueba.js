@@ -1,12 +1,11 @@
-console.log("I'm learning about");
+const Calculate = {
+    factorial(factorialNumber) {
+        let result = 1;
+        for (let i = factorialNumber; i > 0; i--) {
+            result = result * i;
+        }
+        return result
+    }
+}
 
-for (let idx = 0; idx < 999999999; idx++) { }
-
-// The second console.log() statement is
-// delayed by the for loop's execution
-console.log("the Event Loop");
-
-
-console.log("I’m learning about");
-setTimeout(() => { console.log("Event Loop"); }, 2000);
-console.log("the");
+console.log(Calculate.factorial(5))
