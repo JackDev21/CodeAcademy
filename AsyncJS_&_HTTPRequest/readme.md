@@ -82,9 +82,7 @@ fetch("https://api.example.com/data")
 
 ```
 
-# Async/Await - Revisión
-
-¡Excelente trabajo al familiarizarte con la sintaxis async...await! Vamos a repasar lo que has aprendido:
+# Async/Await -
 
 - **async...await** es azúcar sintáctica construida sobre promesas nativas y generadores de JavaScript.
 - Declaramos una función asíncrona con la palabra clave `async`.
