@@ -16,4 +16,4 @@ Este repositorio se encuentra en constante actualización a medida que avanzo en
 
 ---
 
-https://es.javascript.info/
+[https://es.javascript.info/](https://lenguajejs.com/)https://lenguajejs.com/
