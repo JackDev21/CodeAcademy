@@ -81,3 +81,41 @@ fetch("https://api.example.com/data")
 ```
 
 ```
+
+# Async/Await - Revisión
+
+¡Excelente trabajo al familiarizarte con la sintaxis async...await! Vamos a repasar lo que has aprendido:
+
+- **async...await** es azúcar sintáctica construida sobre promesas nativas y generadores de JavaScript.
+- Declaramos una función asíncrona con la palabra clave `async`.
+- Dentro de una función asíncrona, utilizamos el operador `await` para pausar la ejecución de nuestra función hasta que una acción asíncrona se complete y la promesa esperada ya no esté pendiente.
+- `await` devuelve el valor resuelto de la promesa esperada.
+
+- Podemos escribir múltiples declaraciones `await` para producir código que se lee como código síncrono.
+
+- Utilizamos bloques `try...catch` dentro de nuestras funciones asíncronas para manejar errores.
+
+- Aunque utilizamos `async...await` para hacer que el código se lea de manera más síncrona, aún aprovechamos la concurrencia escribiendo funciones asíncronas que permiten que las acciones asíncronas ocurran en paralelo siempre que sea posible.
+
+## Más Información
+
+La utilización de `async...await` es una práctica común en el desarrollo de JavaScript moderno, y ofrece una forma más limpia y legible de manejar operaciones asíncronas. Sin embargo, es fundamental entender que estamos trabajando con promesas subyacentes y que aún debemos aprovechar la concurrencia cuando sea posible.
+
+## Ejemplo de Uso
+
+```javascript
+async function exampleAsyncFunction() {
+	try {
+		let result1 = await someAsyncOperation1();
+		let result2 = await someAsyncOperation2();
+		// ... más operaciones asíncronas ...
+
+		console.log("Results:", result1, result2);
+	} catch (error) {
+		console.error("Error:", error);
+	}
+}
+
+// Llamamos a la función asíncrona
+exampleAsyncFunction();
+```
