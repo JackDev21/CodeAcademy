@@ -117,3 +117,16 @@ async function exampleAsyncFunction() {
 // Llamamos a la función asíncrona
 exampleAsyncFunction();
 ```
+
+# Fetch API para Solicitudes Asincrónicas
+
+Realizar solicitudes GET y POST utilizando la Fetch API y las palabras clave async/await.
+
+- Las solicitudes GET y POST pueden crearse de diversas maneras.
+- Podemos utilizar fetch() y async/await para solicitar datos de forma asincrónica desde APIs.
+- Las Promesas son un tipo de objeto JavaScript que representa datos que eventualmente se devolverán de una solicitud.
+- La función fetch() puede usarse para crear solicitudes y devolverá promesas.
+- Podemos encadenar métodos .then() para manejar las promesas devueltas por la función fetch().
+- La palabra clave async se utiliza para crear funciones asincrónicas que devolverán promesas.
+- La palabra clave await solo puede usarse con funciones declaradas con la palabra clave async.
+- La palabra clave await suspende el programa mientras espera que una promesa se resuelva.
