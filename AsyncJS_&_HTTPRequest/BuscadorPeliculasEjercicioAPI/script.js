@@ -1,5 +1,5 @@
 // Clave de API y URL base de TMDB
-const tmdbKey = "f68f41ea1794638adbfe03f4760dfced";
+const tmdbKey = "";
 const tmdbBaseUrl = "https://api.themoviedb.org/3";
 
 // Botón de reproducción en la interfaz
