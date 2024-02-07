@@ -3,10 +3,10 @@
 	height: 300px;
 	font-size: 160px;
 	padding: 25px;
-	color: white;
+	color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 8px solid white;
+	border: 8px solid black;
 	margin-bottom: 15px
 }
