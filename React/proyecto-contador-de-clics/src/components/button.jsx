@@ -1,6 +1,6 @@
 import React from "react";
 
-const button = ({ texto, itsClickButton, setItsClickButton }) => {
+const Button = ({ texto, itsClickButton, setItsClickButton }) => {
 	return (
 		<div>
 			<button
@@ -13,4 +13,4 @@ const button = ({ texto, itsClickButton, setItsClickButton }) => {
 	);
 };
 
-export default button;
+export default Button;
