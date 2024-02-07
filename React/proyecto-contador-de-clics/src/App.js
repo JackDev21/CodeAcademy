@@ -1,6 +1,9 @@
 import './App.css';
+import Button from './components/Button'
 import logo from './img/logo.png'
-import Button from './components/button'
+import Counter from './components/Counter'
+
+
 
 function App() {
 
@@ -24,6 +27,7 @@ function App() {
           alt='logo de jack' />
       </div>
       <div className='contenedor-principal'>
+        <Counter numClicks={10} />
         <Button
           texto="Click"
           itsClickButton={true}
