@@ -85,6 +85,10 @@ globalThis.miVariableGlobal = 'Hola desde el contexto global';
 
 // Accedemos a la variable global desde cualquier parte de la aplicación
 console.log(globalThis.miVariableGlobal); // Output: Hola desde el contexto global
+
+globalThis.console.log(globalThis.miVariableGlobal); // Output: Hola desde el contexto global
+global.console.log(globalThis.miVariableGlobal); // Output: Hola desde el contexto global
+
 ```
 
 Es importante recordar que, si bien `globalThis` proporciona acceso al contexto global, se recomienda evitar su uso excesivo y priorizar el uso de técnicas más seguras y controladas, como la importación y exportación de módulos en Node.js. El uso excesivo de variables y funciones globales puede hacer que tu código sea menos mantenible y más propenso a errores.
