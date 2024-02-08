@@ -65,3 +65,28 @@ Este resumen muestra cómo ejecutar un programa simple en Node.js.
 Estos son solo algunos ejemplos de los numerosos módulos disponibles en Node.js. Al aprovechar estos módulos, los desarrolladores pueden construir aplicaciones robustas y eficientes en Node.js para una variedad de propósitos.
 
 ---
+
+```markdown
+
+
+# Descripción de globalThis en Node.js
+
+En Node.js, `globalThis` es un objeto global que proporciona acceso al contexto global en todas partes de tu aplicación. Este objeto se introdujo en el estándar ECMAScript 2020 y está disponible tanto en navegadores web como en entornos de Node.js.
+
+Cuando hablamos de "contexto global", nos referimos al ámbito más alto en el que se ejecuta tu código. En Node.js, este contexto global es representado por el objeto `global`. Antes de la introducción de `globalThis`, acceder al contexto global en entornos distintos a los navegadores era un poco inconsistente, ya que cada entorno tenía su propia forma de acceder a este contexto global.
+
+La introducción de `globalThis` en ECMAScript 2020 resolvió esta inconsistencia al proporcionar una forma estándar y consistente de acceder al contexto global, tanto en navegadores como en Node.js. Esto significa que puedes usar `globalThis` para acceder a las propiedades y métodos globales desde cualquier parte de tu aplicación Node.js, sin importar dónde se esté ejecutando el código.
+
+Por ejemplo, puedes usar `globalThis` para acceder a variables globales definidas en tu aplicación o para acceder a funciones globales como `setTimeout` o `setInterval`. Aquí te muestro un ejemplo básico:
+
+```javascript
+// Definimos una variable global
+globalThis.miVariableGlobal = 'Hola desde el contexto global';
+
+// Accedemos a la variable global desde cualquier parte de la aplicación
+console.log(globalThis.miVariableGlobal); // Output: Hola desde el contexto global
+```
+
+Es importante recordar que, si bien `globalThis` proporciona acceso al contexto global, se recomienda evitar su uso excesivo y priorizar el uso de técnicas más seguras y controladas, como la importación y exportación de módulos en Node.js. El uso excesivo de variables y funciones globales puede hacer que tu código sea menos mantenible y más propenso a errores.
+```
+
