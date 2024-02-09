@@ -1,9 +1,9 @@
-
 import './App.css';
 import Button from './components/Button'
-import logo from './img/logo.png'
+import Logo from './components/Logo'
 import Counter from './components/Counter'
 import { useState } from 'react';
+
 
 
 function App() {
@@ -25,12 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='logo-contenedor'>
-        <img
-          className='logo'
-          src={logo}
-          alt='logo de jack' />
-      </div>
+      <Logo />
       <div className='contenedor-principal'>
         <Counter numClicks={numClicks} />
         <Button
@@ -41,7 +36,6 @@ function App() {
           texto="Reiniciar"
           itsClickButton={false}
           setItsClickButton={restartCounter} />
-
       </div>
 
     </div>
