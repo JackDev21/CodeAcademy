@@ -10,19 +10,25 @@ import { evaluate } from 'mathjs';
 function App() {
 
   const [input, setInput] = useState('');
+  const [lastCharIsOperator, setLastCharIsOperator] = useState(false)
 
   const addInput = value => {
-    setInput(input + value)
-  };
 
+    if (!('+*/-'.includes(value) && lastCharIsOperator)) {
+      setInput(input + value)
+      setLastCharIsOperator('+*/-'.includes(value))
+    };
+  }
   const clearInput = () => {
     setInput('')
+    setLastCharIsOperator(false) // Reinicia el estado de lastCharIsOperator
   };
 
   const calcResult = () => {
     if (input) {
       const result = evaluate(input)
-      setInput(parseFloat(result).toFixed(6))
+      const formatResult = Number.isInteger(result) ? result : result.toFixed(6)
+      setInput(formatResult.toString())
     } else {
       alert('Por favor ingrese valores')
     }
