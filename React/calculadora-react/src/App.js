@@ -1,7 +1,7 @@
 import './App.css';
-import logo from './img/calculator-cartoon.png'
 import Button from './components/Button'
 import Display from './components/Display';
+import Logo from './components/Logo';
 import ClearButton from './components/ClearButton';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
@@ -31,12 +31,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='logo-contenedor'>
-        <img
-          src={logo}
-          className='logo'
-          alt='Logo Calculadora' />
-      </div>
+      <Logo />
       <div className='contenedor-calculadora'>
         <Display input={input} />
         <div className="fila">
