@@ -6,7 +6,6 @@
 
 .App {
   height: 100vh;
-  padding-top: 10px;
   background-color: #1b1b32;
   font-family: Lato, sans-serif;
   display: flex;
@@ -23,12 +22,11 @@
 }
 
 .logo {
-  height: 215px;
+  height: 220px;
 }
 
 .contenedor-calculadora {
   width: 400px;
-  height: 630px;
   padding: 14px;
   background-color: #99c9ff;
   border-radius: 20px;

@@ -13,11 +13,11 @@ function App() {
 
   const addInput = value => {
     setInput(input + value)
-  }
+  };
 
   const clearInput = () => {
     setInput('')
-  }
+  };
 
   const calcResult = () => {
     if (input) {
@@ -26,7 +26,7 @@ function App() {
     } else {
       alert('Por favor ingrese valores')
     }
-  }
+  };
 
 
   return (
