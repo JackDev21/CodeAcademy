@@ -6,19 +6,18 @@ import "../styles/ListaDeTareas.css";
 const ListaDeTareas = () => {
 	const [tareas, setTareas] = useState([]);
 
-	// Al cargar la página, recuperamos las tareas almacenadas en el almacenamiento local
+	// Este bloque de código utiliza el hook useEffect de React para ejecutar una función después de que el componente se monta por primera vez.
 	useEffect(() => {
+		// Se obtiene el valor almacenado en el localStorage bajo la clave "tareas".
 		const storedTareas = localStorage.getItem("tareas");
+
+		// Se verifica si se ha encontrado algún valor en el almacenamiento local.
 		if (storedTareas) {
-			try {
-				const parsedTareas = JSON.parse(storedTareas);
-				setTareas(parsedTareas);
-			} catch (error) {
-				console.error("Error parsing stored tareas:", error);
-				// Si hay un error al analizar las tareas, podrías manejarlo aquí
-				// Por ejemplo, podrías inicializar el estado con un valor predeterminado
-				setTareas([]);
-			}
+			// Si se encontraron tareas almacenadas, se procede a parsearlas como JSON para convertirlas en un objeto de JavaScript.
+			const parsedTareas = JSON.parse(storedTareas);
+
+			// Luego, se establece el estado de las tareas del componente con las tareas obtenidas del almacenamiento local.
+			setTareas(parsedTareas);
 		}
 	}, []);
 
