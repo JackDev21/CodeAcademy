@@ -11,5 +11,3 @@ La aplicación se abrirá automáticamente en el navegador configurado por defec
 ## Instalar Módulos
 Para instalar los módulos necesarios para la aplicación, debes ejecutar el comando `npm install` en el terminal.
 
-## Aprende React
-Si deseas aprender React, te invitamos a tomar el [curso gratuito de React (8 horas)](https://www.youtube.com/watch?v=6Jfk8ic3KVk) en el canal de YouTube de freeCodeCamp en Español.
