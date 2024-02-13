@@ -1,17 +1,13 @@
-var min = function (list) {
-
-    let listOrder = list.sort((a, b) => a - b)
-    return listOrder[0];
-}
-
-var max = function (list) {
-    list.sort((a, b) => b - a)
-    return list[0];
-}
+let lista = ["objeto1", "      objeto2 ", "objeto3", "objeto4", "objeto5", "objeto6", "objeto7", "objeto8", "objeto9", "objeto10"];
 
 
 
-list = [-5, 5, 10, 0, 1, 2, 3, 4, -6, -7]
 
-console.log(min(list))
-console.log(max(list))
+
+
+let listaForEach = lista.map((objeto) => {
+  let objetoTrimmed = objeto.trim()
+  if (objetoTrimmed === ('objeto2')) {
+    console.log(objetoTrimmed);
+  }
+})
