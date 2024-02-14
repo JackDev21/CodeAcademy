@@ -1,6 +1,6 @@
-const saludo = require('./saludo');
-const saludoHolaMundo = require('./saludo');
+const saludos = require('./saludo');
 
-console.log(saludo.saludar('Jack'))
-console.log(saludoHolaMundo.saludarHolaMundo())
+
+console.log(saludos.saludar('Jack'))
+console.log(saludos.saludarHolaMundo())
 
