@@ -1,16 +1,15 @@
 # CodeAcademy
 
-Este repositorio contiene ejercicios y proyectos desarrollados como parte del curso de CodeAcademy. La estructura principal se organiza en la carpeta raíz "CodeAcademy", que contiene tres subdirectorios principales: CSS, HTML y Javascript.
+Este repositorio contiene ejercicios y proyectos desarrollados como parte del curso de CodeAcademy. La estructura principal se organiza en la carpeta raíz "CodeAcademy", que contiene subdirectorios: CSS, HTML, Javascript, Node, React, Dom, Test, Git&Github etc..
 
 Dentro de cada uno de estos subdirectorios encontrarás:
+- Ejercicios, proyectos y material relacionados con cada temario.
+  
+Además,encontrarás "Ejercicios/Proyectos" que contiene desafíos y ejercicios para poner en práctica lo aprendido.
 
-- **CSS:** Ejercicios, proyectos y material relacionado con hojas de estilo en cascada.
-- **HTML:** Ejercicios, proyectos y documentación sobre desarrollo web con HTML.
-- **Javascript:** Ejercicios, proyectos y recursos para aprender y practicar JavaScript.
+Este repositorio se encuentra en constante actualización a medida que avanzo en el curso de CodeAcademy, añadiendo nuevos ejercicios, proyectos y notas relacionadas con cada lenguaje. 
 
-Además, en la carpeta principal "CodeAcademy", encontrarás una carpeta adicional llamada "Ejercicios" que contiene desafíos y ejercicios que combinan HTML, CSS y JavaScript para poner en práctica lo aprendido.
-
-Este repositorio se encuentra en constante actualización a medida que avanzo en el curso de CodeAcademy, añadiendo nuevos ejercicios, proyectos y notas relacionadas con cada lenguaje.
+Ademas voy añadiendo de otros cursos información adicional, ejercicios ó proyetos para ir practicando. Por ejemplo de Midudev, freecodecamp etc...
 
 ¡Bienvenido a explorar y aprender junto a mí en este viaje de desarrollo!
 
