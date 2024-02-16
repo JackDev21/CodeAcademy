@@ -1,1 +1,2 @@
-![Alt text](img/adivina.png)
+
+[text](readme.md)

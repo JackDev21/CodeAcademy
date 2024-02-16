@@ -8,4 +8,5 @@
 - fs(file system)
 - os(sistema operativo)
 - path(ruta)
+- console
 - etc...
