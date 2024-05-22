@@ -11,8 +11,7 @@ function saludarHolaMundo() {
 //module.exports.saludar = saludar;
 //module.exports.saludarHolaMundo = saludarHolaMundo
 
-
-module.exports = {
+module.exports = {  // equivalente
   saludar: saludar,
   saludarHolaMundo: saludarHolaMundo
 }

@@ -1,4 +1,4 @@
-const saludos = require('./saludos');
+const saludos = require('./saludo');
 
 
 console.log(saludos.saludar('Jack'))
